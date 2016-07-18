@@ -39,16 +39,13 @@ class DataInput {
             int l = 0;
             for(String line = ""; line != null; line = br.readLine()){
                 String t_line = br.readLine();
-                System.out.println(l);
-                l++;
-                
                 try
                 {
-                line = t_line.toLowerCase();
+                    line = t_line.toLowerCase();
                 }
                 catch(Exception e)
                 {
-                ;
+                    ;//yet to be implemented
                 }
           
                 Matcher matcher = pattern.matcher( line );

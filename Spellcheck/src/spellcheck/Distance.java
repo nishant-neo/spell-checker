@@ -68,15 +68,18 @@ class Distance
         if (candidates.size() > 0) {
             return candidates.get(Collections.max(candidates.keySet()));
         }
-        return "";
-        /*for (String s : list) {
+        //return "";
+        for (String s : list) {
             for (String w : editDistance(s)) {
                 if (dict.containsKey(w)) {
                     candidates.put(dict.get(w), w);
                 }
             }
         }
-        return candidates.size() > 0 ? candidates.get(Collections.max(candidates.keySet())) : word;*/
+        if (candidates.size() > 0)
+            return candidates.get(Collections.max(candidates.keySet()));
+        else
+            return word;
     }
 
 }

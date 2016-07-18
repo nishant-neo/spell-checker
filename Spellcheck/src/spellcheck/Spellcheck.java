@@ -32,7 +32,7 @@ public class Spellcheck {
         if( result == word )
             System.out.println(" Entered word is spelled correct.");
         else 
-            System.out.println(result);
+            System.out.println("The word recommendation is :" + result);
     }
     
 }
